@@ -21,7 +21,7 @@ void plazza::Error::launchHelp()
     std::cout << "\tn: number of cooks per kitchen." << std::endl;
     std::cout << "\tt: time in milliseconds, used by the kitchen stock to replace ingredients.\n" << std::endl;
     std::cout << "DESCRIPTION:" << std::endl;
-    std::cout << "\tPlazza is project which simulate an italian restaurant." << std::endl;
+    std::cout << "\tPlazza is a project which simulate an italian restaurant." << std::endl;
 }
 
 void plazza::Error::ErrorHandling(int ac, char **av)
