@@ -39,7 +39,8 @@ namespace plazza
             Shell(const std::string &prompt);
             ~Shell() = default;
 
-            void launchShell();
+            void printIntroducing();
+            int launchShell();
         protected:
             std::string prompt;
     };

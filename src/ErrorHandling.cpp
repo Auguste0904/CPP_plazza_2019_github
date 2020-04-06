@@ -28,7 +28,8 @@ void plazza::Error::ErrorHandling(int ac, char **av)
 {
     if (ac == 2 && strcmp(av[1], "-h") == 0)
         this->launchHelp();
-    else if (ac != 4 && av != NULL) {
+    else if (ac != 4 && av != NULL)
         throw plazza::Exception("Error: wrong number of arguments.\nPlease try \"./plazza [multiplier] [n] [t]\"");
-    }
+    else if (!std::atoi(av[1]) || !std::atoi(av[2]) || !std::atoi(av[3]))
+        throw plazza::Exception("Error: please write only numbers as arguments");
 }
